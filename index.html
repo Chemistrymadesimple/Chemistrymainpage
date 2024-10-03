@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Introduction to Chemistry</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Introduction to Chemistry</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/Rd4a1X3B61w?si=yBvJ690roY2BzlFL"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-    <main>
-        <p id="greeting">This is a simple web page.</p>
-        <button id="changeTextBtn">Change Text</button>
-    </main>
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Introduction to Chemistry</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What is the basic unit of matter?</p>
+                <input type="radio" name="q1" value="A"> A. Molecule<br>
+                <input type="radio" name="q1" value="B"> B. Atom<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
 
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+            <div class="quiz-question">
+                <p>2. Which branch of chemistry deals with the study of carbon-containing compounds?</p>
+                <input type="radio" name="q2" value="A"> A. Organic Chemistry<br>
+                <input type="radio" name="q2" value="B"> B. Inorganic Chemistry<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="quiz-question">
+                <p>3. What is the law of conservation of mass?</p>
+                <input type="radio" name="q3" value="A"> A. Mass cannot be created or destroyed<br>
+                <input type="radio" name="q3" value="B"> B. Mass can change forms indefinitely<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. Which subatomic particles are found in the nucleus of an atom?</p>
+                <input type="radio" name="q4" value="A"> A. Protons and neutrons<br>
+                <input type="radio" name="q4" value="B"> B. Electrons and neutrons<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. What is the role of a catalyst in a chemical reaction?</p>
+                <input type="radio" name="q5" value="A"> A. It speeds up the reaction<br>
+                <input type="radio" name="q5" value="B"> B. It slows down the reaction<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong></p>
+        <p>Discuss the importance of chemistry in understanding the natural world and its relevance to other scientific fields. Highlight how chemistry provides insights into the composition, structure, and properties of matter and how it interacts with other disciplines such as biology, physics, and environmental science.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto:chemistrymadesimple111@gmail.com"> chemistrymadesimple111@gmail.com</a></p>
+        <p>If the link does not work, send your assignment manually to: chemistrymadesimple111@gmail.com</p>
+        <textarea id="assignmentInput" rows="8" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>

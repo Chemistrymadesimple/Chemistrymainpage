@@ -15,7 +15,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         q2: 'B',
         q3: 'B',
         q4: 'B',
-        q5: 'B'
+        q5: 'A'
     };
 
     // Check each question
